@@ -1,18 +1,23 @@
-# Yanghanlin Hikoboshi
+# Hikoboshi 1
 
-## How do I install these formulae?
+A Homebrew tap that contains some personal applications.
 
-`brew install yanghanlin/hikoboshi/<formula>`
+## Usage
 
-Or `brew tap yanghanlin/hikoboshi` and then `brew install <formula>`.
+<!--
+    FIXME: This tap cannot be hosted in repository yanghanlin/hikoboshi-first (as with the Scoop
+           bucket as `brew test-bot` will never succeed. See also this thread on GitHub:
+           https://github.com/orgs/Homebrew/discussions/3918.
+  -->
 
-Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
+Add this tap to Homebrew:
 
-```ruby
-tap "yanghanlin/hikoboshi"
-brew "<formula>"
+```bash
+brew tap yanghanlin/hikoboshi
 ```
 
-## Documentation
+Also refer to `brew help`, `man brew` or the [Homebrew documentation](https://docs.brew.sh).
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+## License
+
+Licensed under [MIT](LICENSE).

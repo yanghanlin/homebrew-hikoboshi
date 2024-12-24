@@ -3,6 +3,11 @@ class Loginto < Formula
   homepage "https://github.com/yanghanlin/tdutilities/tree/main/apps/loginto"
   version "0.0-40.2165ec5"
 
+  livecheck do
+    url "https://static.tree-diagram.site/utilities/version"
+    regex(/^(.*)$/i)
+  end
+
   bottle do
     root_url "https://github.com/yanghanlin/homebrew-hikoboshi/releases/download/loginto-0.0-40.2165ec5"
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "1f6d2779e8b0b8f01d30cb69159281a859b92052bd52de332af511eeb7b9fab3"

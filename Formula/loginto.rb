@@ -3,7 +3,7 @@
 class Loginto < Formula
   desc "Utility to help log into remote hosts with convenience"
   homepage "https://github.com/yanghanlin/tdutilities/tree/main/apps/loginto"
-  version "0.0-40.2165ec5"
+  version "0.1"
 
   # FIXME: `brew style` or `brew audit` seems to report a false positive:
   #        FormulaAudit/LivecheckUrlSymbol: Use url :stable
@@ -20,23 +20,23 @@ class Loginto < Formula
 
   on_macos do
     on_intel do
-      url "https://static.tree-diagram.site/utilities/loginto_0.0-40.2165ec5_Darwin_x86_64.tar.xz"
-      sha256 "951516b2e90b6a500bfc041625a01f53055176e6baa240457fcf2483da5e0acd"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Darwin_x86_64.tar.xz"
+      sha256 "808ac8047a65e970efa9cf673d708a3a9056a579bd3df2dd54bc636967e8f353"
     end
     on_arm do
-      url "https://static.tree-diagram.site/utilities/loginto_0.0-40.2165ec5_Darwin_arm64.tar.xz"
-      sha256 "1be180489999cb5db9c151229e2858532ddb0aabf9a5816da12e337f3b1d4bbd"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Darwin_arm64.tar.xz"
+      sha256 "9906d758b187ed932f4b4fdcf9b9e6b9117b553c70a499e0c13f853331b09ddb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.tree-diagram.site/utilities/loginto_0.0-40.2165ec5_Linux_x86_64.tar.xz"
-      sha256 "30b277e189f82987da6a308e19c8f8523a74fc072a38f27d64e600e6f4639647"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Linux_x86_64.tar.xz"
+      sha256 "6059036ff603d50c75de4b2fac1c307468d7b9aee1c24304f7b10ecf12d656dc"
     end
     on_arm do
-      url "https://static.tree-diagram.site/utilities/loginto_0.0-40.2165ec5_Linux_aarch64.tar.xz"
-      sha256 "d23ec9dfccca2cee105894a061f95b0122dee9841a727574a68d74d6a86584c8"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Linux_aarch64.tar.xz"
+      sha256 "89dc41acb030ea0624df5f388b97d721984878c8f1a2f4e3db4e8280a2941bdd"
     end
   end
 

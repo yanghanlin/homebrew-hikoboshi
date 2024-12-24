@@ -26,7 +26,11 @@ class Loginto < Formula
   end
 
   def install
-    prefix.install Dir["*"]
+    # FIXME: During installation process, Homebrew seems to set the working
+    #        directory to $TARBALL/bin, where access to the root directory seems
+    #        blocked; replace `bin.install` with `prefix.install` once this is
+    #        resolved.
+    bin.install Dir["*"]
   end
 
   test do

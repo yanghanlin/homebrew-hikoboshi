@@ -1,6 +1,6 @@
 class Loginto < Formula
   desc "Utility to help log into remote hosts with convenience"
-  homepage "https://github.com/yanghanlin/tdutilities/tree/main/loginto"
+  homepage "https://github.com/yanghanlin/tdutilities/tree/main/apps/loginto"
   version "0.0-40.2165ec5"
 
   on_macos do

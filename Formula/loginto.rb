@@ -3,6 +3,12 @@ class Loginto < Formula
   homepage "https://github.com/yanghanlin/tdutilities/tree/main/apps/loginto"
   version "0.0-40.2165ec5"
 
+  bottle do
+    root_url "https://github.com/yanghanlin/homebrew-hikoboshi/releases/download/loginto-0.0-40.2165ec5"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "1f6d2779e8b0b8f01d30cb69159281a859b92052bd52de332af511eeb7b9fab3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "cc9eda6ac0e3fa7f4e27bc704c7e6230be2c066d79eb3c1590fb76ddc419c29d"
+  end
+
   on_macos do
     on_intel do
       url "https://static.tree-diagram.site/utilities/loginto_0.0-40.2165ec5_Darwin_x86_64.tar.xz"

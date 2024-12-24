@@ -21,3 +21,5 @@ Also refer to documentation with `brew help`, `man brew` or the [Homebrew docume
 ## License
 
 Licensed under [MIT](LICENSE).
+
+<!-- Change -->

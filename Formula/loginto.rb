@@ -25,6 +25,10 @@ class Loginto < Formula
     end
   end
 
+  test do
+    system "#{bin}/loginto", "version"
+  end
+
   def install
     prefix.install Dir["*"]
   end

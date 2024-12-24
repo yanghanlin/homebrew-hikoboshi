@@ -13,9 +13,9 @@ class Loginto < Formula
   # end
 
   bottle do
-    root_url "https://github.com/yanghanlin/homebrew-hikoboshi/releases/download/loginto-0.0-40.2165ec5"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "1f6d2779e8b0b8f01d30cb69159281a859b92052bd52de332af511eeb7b9fab3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "cc9eda6ac0e3fa7f4e27bc704c7e6230be2c066d79eb3c1590fb76ddc419c29d"
+    root_url "https://github.com/yanghanlin/homebrew-hikoboshi/releases/download/loginto-0.1"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "3ccf585134e954de78e61d1b4046858e67c3688a8882623658b84428b7e898ba"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "05509217aa35aa2e8e1da22ff372e2b10160e6921a6234c0602c5e80d62cf3bd"
   end
 
   on_macos do

@@ -1,12 +1,16 @@
+# TODO: Convert to cask once Homebrew casks are supported on Linux
+
 class Loginto < Formula
   desc "Utility to help log into remote hosts with convenience"
   homepage "https://github.com/yanghanlin/tdutilities/tree/main/apps/loginto"
   version "0.0-40.2165ec5"
 
-  livecheck do
-    url "https://static.tree-diagram.site/utilities/version"
-    regex(/^(.*)$/i)
-  end
+  # FIXME: `brew style` or `brew audit` seems to report a false positive:
+  #        FormulaAudit/LivecheckUrlSymbol: Use url :stable
+  # livecheck do
+  #   url "https://static.tree-diagram.site/utilities/version"
+  #   regex(/^(.*)$/i)
+  # end
 
   bottle do
     root_url "https://github.com/yanghanlin/homebrew-hikoboshi/releases/download/loginto-0.0-40.2165ec5"

@@ -1,7 +1,7 @@
 class Loginto < Formula
   desc "Utility to help log into remote hosts with convenience"
   homepage "https://github.com/yanghanlin/tdutilities/tree/main/apps/loginto"
-  version "0.0-40.2165ec5"
+  version "0.1"
 
   bottle do
     root_url "https://github.com/yanghanlin/homebrew-hikoboshi/releases/download/loginto-0.0-40.2165ec5"
@@ -22,8 +22,8 @@ class Loginto < Formula
 
   on_linux do
     on_intel do
-      url "https://static.tree-diagram.site/utilities/loginto_0.0-40.2165ec5_Linux_x86_64.tar.xz"
-      sha256 "30b277e189f82987da6a308e19c8f8523a74fc072a38f27d64e600e6f4639647"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Linux_x86_64.tar.xz"
+      sha256 "6059036ff603d50c75de4b2fac1c307468d7b9aee1c24304f7b10ecf12d656dc"
     end
     on_arm do
       url "https://static.tree-diagram.site/utilities/loginto_0.0-40.2165ec5_Linux_aarch64.tar.xz"

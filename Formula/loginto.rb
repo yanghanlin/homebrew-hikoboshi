@@ -20,22 +20,22 @@ class Loginto < Formula
 
   on_macos do
     on_intel do
-      url "https://static.tree-diagram.site/utilities/loginto_0.1_Darwin_x86_64.tar.xz"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Darwin_x86_64.tar.zst"
       sha256 "808ac8047a65e970efa9cf673d708a3a9056a579bd3df2dd54bc636967e8f353"
     end
     on_arm do
-      url "https://static.tree-diagram.site/utilities/loginto_0.1_Darwin_arm64.tar.xz"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Darwin_arm64.tar.zst"
       sha256 "9906d758b187ed932f4b4fdcf9b9e6b9117b553c70a499e0c13f853331b09ddb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://static.tree-diagram.site/utilities/loginto_0.1_Linux_x86_64.tar.xz"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Linux_x86_64.tar.zst"
       sha256 "6059036ff603d50c75de4b2fac1c307468d7b9aee1c24304f7b10ecf12d656dc"
     end
     on_arm do
-      url "https://static.tree-diagram.site/utilities/loginto_0.1_Linux_aarch64.tar.xz"
+      url "https://static.tree-diagram.site/utilities/loginto_0.1_Linux_aarch64.tar.zst"
       sha256 "89dc41acb030ea0624df5f388b97d721984878c8f1a2f4e3db4e8280a2941bdd"
     end
   end

@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
       - name: Create bump branch
         run: |
           git checkout -b bump/utilities
@@ -53,7 +54,16 @@ jobs:
                 url_to_check = match.group(1)
               elif match := re.match(r'^\s*sha256\s+"(.*)"\s*$', line):
                 current_sha = match.group(1)
-                sha = subprocess.run("curl -fsSL {} | shasum -a 256 | cut -d ' ' -f 1".format(url_to_check), shell=True, check=True, capture_output=True).stdout.decode().strip()
+                sha = subprocess.run(
+                  "set -o pipefail; "
+                  f"curl -fsSL '{url_to_check}'"
+                  "  | shasum -a 256"
+                  "  | cut -d ' ' -f 1",
+                  shell=True,
+                  executable="/bin/bash",
+                  check=True,
+                  stdout=subprocess.PIPE,
+                ).stdout.decode().strip()
                 line = line.replace(current_sha, sha)
               lines[i] = line
             with open(formula, "w") as file:

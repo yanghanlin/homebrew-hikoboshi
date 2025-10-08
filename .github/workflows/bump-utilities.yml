@@ -71,7 +71,7 @@ jobs:
             print(f"Updated version from {current_version} to {version} in {formula}")
         env:
           FORMULAE: |
-            Formula/loginto.rb
+            Casks/loginto.rb
       - name: Commit and push changes
         id: commit-push-changes
         run: |

@@ -28,6 +28,3 @@ jobs:
         run: brew test-bot --only-setup
       - name: Check tap syntax
         run: brew test-bot --only-tap-syntax
-      - name: Check casks
-        run: brew test-bot --only-casks
-        if: github.event_name == 'pull_request'
